@@ -1,0 +1,42 @@
+/* table */
+.table {
+    margin: 15px 0;
+}
+
+table {
+    background-color: #8EE4AF;
+    margin: 0 auto;
+    border-spacing: 0;
+}
+
+caption {
+    padding: 15px 0;
+}
+
+/* table,
+tr,
+td {
+    border: none;
+} */
+
+thead {
+    background-color: #00000080;
+    color: #fff;
+}
+
+
+td {
+    padding: 1rem;
+}
+
+tr {
+    background-color: #ffffff15;
+}
+
+tr:nth-child(2n) {
+    background-color: #ffffff50;
+}
+
+tr:hover {
+    background-color: #00000025;
+}

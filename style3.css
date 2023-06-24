@@ -1,0 +1,230 @@
+/* Sign-in/up card */
+.sign-card {
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 10vh;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+}
+
+/* Sign in part */
+
+.sign-in {
+    width: 50%;
+    background-image: url("./image/sigh-in-bg.png");
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-in h3 {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.sign-in p {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.sign-in a {
+    background-color: #5CDB95;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/* Sign up part: divide yo 3 parts */
+
+#multi-part {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+
+    background-color: #fff;
+    padding: 25px;
+    padding-bottom: 48px;
+}
+
+/* progress bar */
+.form-progress {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.form-progress-step {
+    flex-grow: 1;
+    background-color: #ddd;
+    border-radius: 5px;
+    height: 10px;
+    margin-right: 5px;
+}
+
+.form-progress-step.current-step {
+    background-color: #007bff;
+}
+
+/* form */
+.form-section {
+    position: relative;
+    display: none;
+    margin-top: 45px;
+}
+
+.form-section.current {
+    display: block;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+    height: 35px;
+}
+
+/* maybe use */
+.double-row {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    gap: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 50%;
+}
+
+label {
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+input {
+    flex: 1;
+}
+
+.input-group>input {
+    position: relative;
+    width: 100%;
+}
+
+.cool-label {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    z-index: 2;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #666;
+    background-color: #c8c6c6;
+}
+
+.cool-input {
+    position: relative;
+    height: 100%;
+    background-color: #c8c6c6;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.cool-input:focus~.cool-label {
+    z-index: -1;
+}
+
+.cool-input:not(:placeholder-shown)~.cool-label {
+    z-index: -1;
+}
+
+.cool-input::placeholder {
+    z-index: -1;
+}
+
+/* button */
+.back-button {
+    left: 0;
+}
+
+.next-button {
+    right: 0px;
+}
+
+.form-button {
+    position: absolute;
+
+    background-color: #05386b;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    transition: .2s;
+    box-shadow: none;
+    padding: 10px 25px;
+}
+
+.form-button:hover {
+    background-color: #05386b;
+    box-shadow: #aaa 0px 0px 5px;
+    transition: .2s;
+}
+
+#register-button {
+    right: 0;
+}
+
+#close-form {
+    position: absolute;
+    right: 28px;
+    top: 28px;
+    z-index: 5;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    /* width: 15px;
+    height: 15px; */
+    background-color: #fff;
+    /* background-image: url("./image/x.png"); */
+}
+
+#close-form>img {
+    width: 20px;
+    z-index: 6;
+    /* border: .2px solid #eee;  */
+}
+
+/* sign up caption */
+.form-caption h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.form-caption p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo-group">
+            <img src="/image/logo_300x300.png" alt="Logo Oreo" id="logo">
+            <h2>COALA co.</h2>
+        </div>
+
+        <div>
+            <ul class="nav-link">
+                <li><a href="index.html">home</a></li>
+                <li><a href="#">shop</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">support</a></li>
+                <li id="sign-in"><a href="#">sign in</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="sign-card">
+        <button id="close-form" onclick="console.log('click')"><img src="/image/x.png" alt="close"></button>
+        <div class="sign-in">
+            <h3>Welcome Back!</h3>
+            <p>to keep connected with us please <br> login with your personal info</p>
+            <a href="#">Sign in</a>
+        </div>
+        <form id="multi-part">
+            <div class="form-caption">
+                <h2>Join and be Coala</h2>
+                <p>Enter your information</p>
+            </div>
+            <div class="form-progress">
+                <div class="form-progress-step current-step" id="step-1"></div>
+                <div class="form-progress-step" id="step-2"></div>
+                <div class="form-progress-step" id="step-3"></div>
+            </div>
+            <div class="form-section current" id="part-1">
+                <div class="form-group">
+                    <input type="text" id="username" class="cool-input" placeholder=" " autocomplete="off">
+                    <label for="username" class="cool-label">Username</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="password" class="cool-input" placeholder=" " autocomplete="off">
+                    <label for="password" class="cool-label">Password</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="confirm-password" class="cool-input" placeholder=" " autocomplete="off">
+                    <label for="confirm-password" class="cool-label">Confirm Password</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="email" class="cool-input" placeholder=" " autocomplete="off">
+                    <label for="email" class="cool-label">Email</label>
+                </div>
+
+                <!--<div class="form-group double-row">
+                    <div class="input-group">
+                        <label for="first-name">Firstname</label>
+                        <input type="text" id="first-name">
+                    </div>
+                    <div class="input-group">
+                        <label for="last-name">Lastname</label>
+                        <input type="text" id="last-name">
+                    </div>
+                </div> -->
+
+                <button type="button" class="next-button form-button">Next Step</button>
+
+            </div>
+            <div class="form-section" id="part-2">
+                <div class="form-group">
+                    <input type="text" id="confirm-password" class="cool-input" placeholder=" " autocomplete="off">
+                    <label for="confirm-password" class="cool-label">First Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="confirm-password" class="cool-input" placeholder=" " autocomplete="off">
+                    <label for="confirm-password" class="cool-label">Last Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="confirm-password" class="cool-input" placeholder=" " autocomplete="off">
+                    <label for="confirm-password" class="cool-label">Birthday</label>
+                </div>
+
+                <button type="button" class="back-button form-button">Previous Step</button>
+                <button type="button" class="next-button form-button">Next Step</button>
+            </div>
+            <div class="form-section" id="part-3">
+                <h2>Part 3</h2>
+
+                <button type="button" class="back-button form-button">Previous Step</button>
+                <button type="button" class="form-button" id="register-button">Register</button>
+            </div>
+        </form>
+    </div>
+
+
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
