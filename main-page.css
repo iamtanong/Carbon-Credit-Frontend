@@ -2,11 +2,12 @@ body {
     background-color: #fff;
 }
 
-nav {
+/* nav {
     box-shadow: 0px 2px 2px 0px #333;
-}
+} */
 
 .main {
+    padding-block: 40px;
     position: relative;
     width: 100%;
 }
