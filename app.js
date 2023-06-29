@@ -20,3 +20,9 @@ document.querySelectorAll(".next-button").forEach((element, index) => {
 document.querySelectorAll(".back-button").forEach((element, index) => {
     element.addEventListener("click", () => { previous_section(index + 1) })
 })
+
+document.getElementById("sign-in-btn").addEventListener("click", () => {
+    console.log("click")
+    document.getElementById("multi-part").classList.remove("sign-here")
+    document.getElementById("sign-in-form").classList.add("sign-here")
+})

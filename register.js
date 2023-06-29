@@ -11,6 +11,7 @@ function update_step(id) {
         e.classList.remove("current-step")
     })
 
+
     document.querySelector("#step-" + id).classList.add("current-step")
 }
 

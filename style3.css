@@ -4,7 +4,7 @@
     height: 500px;
     margin: 0 auto;
     margin-top: 10vh;
-    padding: 20px;
+    /* padding: 10px; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -41,8 +41,9 @@
     margin-bottom: 20px;
 }
 
-.sign-in a {
+.sign-in button {
     background-color: #5CDB95;
+    color: #05386b;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -50,42 +51,33 @@
     border-radius: 10px;
 }
 
+
 /* Sign up part: divide yo 3 parts */
 
 #multi-part {
     position: relative;
     width: 50%;
     margin: 0 auto;
+    display: none;
 
     background-color: #fff;
     padding: 25px;
     padding-bottom: 48px;
 }
 
-/* progress bar */
-.form-progress {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
-}
-
-.form-progress-step {
-    flex-grow: 1;
-    background-color: #ddd;
-    border-radius: 5px;
-    height: 10px;
-    margin-right: 5px;
-}
-
-.form-progress-step.current-step {
-    background-color: #007bff;
+span.prog {
+    color: #666;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 15px;
 }
 
 /* form */
 .form-section {
     position: relative;
     display: none;
-    margin-top: 45px;
+    /* margin-top: 45px; */
 }
 
 .form-section.current {
@@ -103,14 +95,7 @@
     display: flex;
     flex-direction: row;
     position: relative;
-    gap: 10px;
-}
-
-.input-group {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    width: 50%;
+    gap: 20px;
 }
 
 label {
@@ -122,10 +107,15 @@ input {
     flex: 1;
 }
 
-.input-group>input {
+/* .select-group {
     position: relative;
-    width: 100%;
-}
+} */
+
+/* .select-group select {
+    display: none;
+} */
+
+/* .select-group::after {} */
 
 .cool-label {
     position: absolute;
@@ -169,6 +159,7 @@ input {
 }
 
 .next-button {
+    bottom: -70px;
     right: 0px;
 }
 
@@ -197,8 +188,8 @@ input {
 
 #close-form {
     position: absolute;
-    right: 28px;
-    top: 28px;
+    right: 10px;
+    top: 10px;
     z-index: 5;
     padding: 0;
     width: 30px;
@@ -221,10 +212,42 @@ input {
     font-family: 'Inter', sans-serif;
     font-weight: 900;
     font-size: 32px;
+    word-break: normal;
+}
+
+.form-caption.cap2 h2 {
+    font-size: 28px;
 }
 
 .form-caption p {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 14px;
+}
+
+
+#sign-in-form {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    display: none;
+
+    background-color: #fff;
+    padding: 25px;
+    padding-bottom: 48px;
+}
+
+
+.login {
+    position: absolute;
+    width: 460px;
+    height: min-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#multi-part.sign-here,
+#sign-in-form.sign-here {
+    display: block;
 }
