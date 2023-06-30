@@ -57,8 +57,7 @@ body {
 }
 
 .garuntee-bait {
-    /* margin-top: 100px; */
-    padding-inline: 25px;
+    padding: 25px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -157,9 +156,11 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin-bottom: 200px;
     padding: 25px 25px;
-    margin-top: 50px;
+    /* margin-bottom: 200px;
+    margin-top: 50px; */
+
+    margin-block: 150px;
 
     display: flex;
     flex-direction: column;
@@ -254,10 +255,13 @@ body {
 
 .want-credit {
     position: relative;
+    padding-block: 30px;
+}
+
+.want-credit>.group {
     width: 70%;
-    margin: 0 auto;
     background-color: #05386B;
-    margin-bottom: 150px;
+    margin: 0 auto;
     border-radius: 20px;
     padding: 30px 80px;
     text-align: center;
@@ -269,7 +273,7 @@ body {
     height: 300px; */
 }
 
-.want-credit>h2 {
+.want-credit>.group>h2 {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 40px;
@@ -277,7 +281,7 @@ body {
     margin-bottom: 20px;
 }
 
-.want-credit>p {
+.want-credit>.group>p {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -285,7 +289,7 @@ body {
     margin-bottom: 50px;
 }
 
-.want-credit>a {
+.want-credit>.group>a {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 16px;
@@ -304,6 +308,7 @@ body {
     background-color: #05386B;
     height: 180px;
     padding: 25px;
+    margin-top: 55px;
 }
 
 .company-group {
