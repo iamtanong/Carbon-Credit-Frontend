@@ -95,8 +95,8 @@ nav {
 
 #switch-mode {
     padding: 10px;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     position: absolute;
     top: 50%;
@@ -105,6 +105,19 @@ nav {
     background-color: #fff;
     color: #5CDB95;
     font-weight: 800;
+    box-shadow: #333 0px 0px 10px -5px;
+
+    display: block;
+    transition: .5s;
+}
+
+#arrow-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 15px;
+    object-fit: cover;
 }
 
 #buy-btn {
