@@ -1,0 +1,128 @@
+body {
+    background-color: #fff;
+}
+
+nav {
+    background-color: #fff;
+    box-shadow: 0px 3px 3px 0px #aaa;
+}
+
+.buy {
+    position: relative;
+    width: 100%;
+    padding: 80px;
+}
+
+.buy-token {
+    width: 650px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.buy-caption {
+    padding: 5px;
+}
+
+.buy-caption h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    color: #05386B;
+}
+
+.buy-caption h2>span {
+    color: #5CDB95;
+}
+
+.buy-caption h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #666;
+}
+
+.buy-package {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px;
+    margin-top: 15px;
+    padding: 0;
+}
+
+.package {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #05386B;
+    box-shadow: #ccc 0px 0px 2px 2px;
+}
+
+.package:hover {
+    cursor: pointer;
+}
+
+.package .price {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    margin: 0;
+}
+
+.package .pack-info {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.package .pack-info>div.qc {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: #5CDB95;
+    border-radius: 50%;
+}
+
+.package .pack-info>h2 {
+    color: #5CDB95;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.package .pack-info>h3 {
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0;
+}
+
+.package:nth-child(6) .pack-info>h2 {
+    font-size: 18px;
+}
+
+.package .cc-pack {
+    position: absolute;
+    margin: 0;
+    bottom: 3px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+    color: #c8c6c6;
+}
