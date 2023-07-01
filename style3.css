@@ -3,7 +3,7 @@
     width: 1000px;
     height: 500px;
     margin: 0 auto;
-    margin-top: 10vh;
+    margin-top: 12vh;
     /* padding: 10px; */
     display: flex;
     flex-wrap: wrap;
@@ -107,16 +107,6 @@ input {
     flex: 1;
 }
 
-/* .select-group {
-    position: relative;
-} */
-
-/* .select-group select {
-    display: none;
-} */
-
-/* .select-group::after {} */
-
 .cool-label {
     position: absolute;
     top: 50%;
@@ -141,16 +131,82 @@ input {
     font-size: 16px;
 }
 
-.cool-input:focus~.cool-label {
+.cool-input:focus~.cool-label,
+.cool-num-input:focus~.cool-label {
     z-index: -1;
 }
 
-.cool-input:not(:placeholder-shown)~.cool-label {
+.cool-input:not(:placeholder-shown)~.cool-label,
+.cool-num-input:not(:placeholder-shown)~.cool-label {
     z-index: -1;
 }
 
-.cool-input::placeholder {
+.cool-input::placeholder,
+.cool-num-input::placeholder {
     z-index: -1;
+}
+
+/* Remove Arrow: Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -appearance: textfield;
+}
+
+.birthday-group {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 35px;
+    margin-bottom: 20px;
+}
+
+.cool-num-input {
+    height: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: #c8c6c6;
+    border: none;
+    border-radius: 4px;
+    /* width: auto; */
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.birthday-group select {
+    width: 100px;
+    height: 100%;
+    background-color: #c8c6c6;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#date-birth {
+    width: 15%;
+}
+
+#month-birth {
+    width: 40%;
+}
+
+#year-birth {
+    width: 15%;
+}
+
+.cool-label.year {
+    left: 350px;
 }
 
 /* button */

@@ -1,4 +1,4 @@
-import { show_section, update_step } from "./register.js";
+import { show_section, update_step, switch_sign_click } from "./register.js";
 
 let form_section = document.querySelectorAll(".form-section");
 
@@ -21,14 +21,13 @@ document.querySelectorAll(".back-button").forEach((element, index) => {
     element.addEventListener("click", () => { previous_section(index + 1) })
 })
 
-// document.getElementById("sign-in-btn").addEventListener("click", () => {
-//     console.log("click")
-//     document.getElementById("multi-part").classList.remove("sign-here")
-//     document.getElementById("sign-in-form").classList.add("sign-here")
+document.getElementById("sign-in-btn").addEventListener("click", () => {
+    switch_sign_click()
+})
+
+// let switch_mode_btn = document.getElementById('switch-mode')
+// switch_mode_btn.addEventListener("click", () => {
+//     const style = getComputedStyle(switch_mode_btn)
+//     switch_mode_btn.style.rotate = '180deg'
 // })
 
-let switch_mode_btn = document.getElementById('switch-mode')
-switch_mode_btn.addEventListener("click", () => {
-    const style = getComputedStyle(switch_mode_btn)
-    switch_mode_btn.style.rotate = '180deg'
-}) 
