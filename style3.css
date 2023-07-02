@@ -85,7 +85,7 @@ span.prog {
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     position: relative;
     height: 35px;
 }
@@ -165,7 +165,7 @@ input[type=number] {
     flex-wrap: wrap;
     gap: 20px;
     height: 35px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .cool-num-input {
@@ -181,7 +181,7 @@ input[type=number] {
     font-size: 16px;
 }
 
-.birthday-group select {
+.cool-select {
     width: 100px;
     height: 100%;
     background-color: #c8c6c6;
@@ -205,6 +205,10 @@ input[type=number] {
     width: 15%;
 }
 
+#company-type {
+    width: 100%;
+}
+
 .cool-label.year {
     left: 350px;
 }
@@ -215,7 +219,7 @@ input[type=number] {
 }
 
 .next-button {
-    bottom: -70px;
+    bottom: -52px;
     right: 0px;
 }
 
@@ -303,7 +307,27 @@ input[type=number] {
     transform: translate(-50%, -50%);
 }
 
+#sign-in-form>h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 36px;
+    position: absolute;
+    top: 40px;
+}
+
 #multi-part.sign-here,
 #sign-in-form.sign-here {
     display: block;
+}
+
+#login-btn {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    padding: 10px 30px;
+    background-color: #05386b;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
 }
