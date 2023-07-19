@@ -158,7 +158,7 @@ li#sign-in>a {
 
 #logo {
     width: 60px;
-    height: 100%;
+    /* height: 100%; */
     top: 11px;
     left: -5px;
     /* filter: hue-rotate(210deg); */

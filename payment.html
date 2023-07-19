@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peyment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="buy-token-page.css">
+    <link rel="stylesheet" href="payment-page.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <nav>
+        <div class="logo-group">
+            <img src="image/logo_300x300.png" alt="Logo Oreo" id="logo">
+            <h2>COALA co.</h2>
+        </div>
+
+        <div>
+            <ul class="nav-link">
+                <li><a href="index.html">home</a></li>
+                <li><a href="#">shop</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">support</a></li>
+                <li id="sign-in"><a href="#">sign in</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="pay">
+        <div class="payment-choice">
+            <div class="choice-caption">
+                <h2>Your <span>Payment</span></h2>
+                <h6>Choose Your Payment</h6>
+
+                <div class="radio-group">
+                    <div class="choose-option">
+                        <input type="radio" id="credit-card" name="payment-option">
+                        <i class='bx bx-check'></i>
+                        <label for="credit-card">Credit Card</label>
+                    </div>
+                    <div class="choose-option">
+                        <input type="radio" id="check" name="payment-option">
+                        <i class='bx bx-check'></i>
+                        <label for="check">Check</label>
+                    </div>
+                    <div class="choose-option">
+                        <input type="radio" id="peypal" name="payment-option">
+                        <i class='bx bx-check'></i>
+                        <label for="peypal">PayPal</label>
+                    </div>
+                    <div class="choose-option">
+                        <input type="radio" id="prompt-pay" name="payment-option">
+                        <i class='bx bx-check'></i>
+                        <label for="prompt-pay">Prompt Pay</label>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="bill">
+            <div class="package pack-selected">
+                <div class="pack-info">
+                    <div class="qc"></div>
+                    <h2>1000</h2>
+                    <h3>Coala Token</h3>
+                </div>
+                <h6 class="cc-pack">1.000 Carbon Credits</h6>
+            </div>
+
+            <div class="bill-info">
+                <h3>1000 <span>Coala Token</span></h3>
+                <div class="row-between">
+                    <h5>Order Number</h5>
+                    <h5>134122452</h5>
+                </div>
+
+                <span class="line-section"></span>
+
+                <div class="row-between">
+                    <h4>Price</h4>
+                    <h6>THB 2,500.00</h6>
+                </div>
+                <div class="row-between">
+                    <h4>Discount</h6>
+                        <h6>THB 00.00
+                    </h4>
+                </div>
+                <div class="row-between">
+                    <h4>VAT ( 7% )</h4>
+                    <h6>THB 175.00</h6>
+                </div>
+
+                <span class="line-section"></span>
+
+                <div class="row-between">
+                    <h5>Total</h5>
+                    <h5>THB 2,675.00</h5>
+                </div>
+
+                <div class="payment-detail">
+                    <h5>Payment :</h5>
+                    <div class="row-between">
+                        <h6>Visa - 0324</h6>
+                        <h6> THB 2,675.00</h6>
+                    </div>
+                </div>
+
+                <div class="email-checkbox">
+                    <label for="email-receipt">
+                        <input type="checkbox" id="email-receipt">
+                        <span class="checkmark">
+                            <i class='bx bx-check'></i>
+                        </span>
+                        Receipt to your email
+                    </label>
+                </div>
+
+                <button id="pay-now-btn">Pay Now</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

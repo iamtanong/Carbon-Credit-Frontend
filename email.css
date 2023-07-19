@@ -1,0 +1,195 @@
+body {
+    background-color: #fff;
+}
+
+nav {
+    background-color: #fff;
+}
+
+.receipt {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.receipt>h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    color: #5CDB95;
+}
+
+.receipt>h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    color: #05386B;
+}
+
+.receipt>h4 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #05386B;
+}
+
+.receipt>h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #666;
+}
+
+.receipt-flag {
+    position: relative;
+    width: 100%;
+    background-image: url("/image/main-flag-bg.png");
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-block: 10px;
+}
+
+.receipt-flag>div.qc {
+    content: "";
+    width: 45px;
+    height: 45px;
+    background-color: #5CDB95;
+    border-radius: 50%;
+    margin-block: 10px;
+}
+
+.receipt-flag-caption {
+    text-align: center;
+}
+
+.receipt-flag-caption>h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    color: #5CDB95;
+}
+
+.receipt-flag-caption>h5 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    color: #fff;
+}
+
+.receipt-flag-caption>h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #c8c6c6;
+}
+
+.order-info {
+    position: relative;
+    width: 100%;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+.info-group {
+    width: 50%;
+    padding: 5px;
+}
+
+.info-group>h3 {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.info-group>h3.info {
+    font-weight: 600;
+}
+
+.price-summary {
+    position: relative;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.sum-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-block: 5px;
+    padding-inline: 40px;
+    margin-bottom: 10px;
+}
+
+.sum-row.desc-price {
+    color: #fff;
+    background-color: #05386B;
+    padding-block: 10px;
+}
+
+.sum-row h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    margin: 0;
+}
+
+.sum-row h5 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+.sum-row h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    color: #05386B;
+    margin: 0;
+}
+
+.sum-row h2>span {
+    color: #666;
+}
+
+span.line-section {
+    content: "";
+    width: 92%;
+    height: 2px;
+    background-color: #c8c6c6;
+    padding: 0 10px;
+    margin: 5px 4%;
+}
+
+h4.service-form {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    color: #000;
+    margin-block: 70px;
+}
